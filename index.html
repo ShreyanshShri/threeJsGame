@@ -14,19 +14,24 @@ body{
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    color: white;
 }
 .loader{
-    border:16px solid #f3f3f3;
+    border:16px solid #262626;
     border-radius:50%;
     border-top:16px solid #3498db;
     width:120px;
     height:120px;
+    margin-top:20vh;
     animation:spin 2s linear infinite;
 }
 
 @keyframes spin{
     0%{ transform:rotate(0deg); }
     100%{transform:rotate(360deg);}
+}
+img{
+    margin-top:20px;
 }
     </style>
     </head>
@@ -37,8 +42,8 @@ body{
             const loader = document.querySelector(".loader")
             setTimeout(function(){
                 loader.style.display="none"
-                document.body.innerHTML = "<h1>Thanks for Trusting me... </h1> <h3>Now share it to others</h3>"
-            }, 20000)
+                document.body.innerHTML = "<img src='https://media.tenor.com/images/a1505c6e6d37aa2b7c5953741c0177dc/tenor.gif' />                                    <h1>Thanks for Trusting me... </h1> <h3>Now share it to others</h3>"
+            }, 40000)
         </script>    
 </body>
 </html>
