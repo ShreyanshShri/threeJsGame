@@ -6,8 +6,11 @@
      <style>
 body{
     display: flex;
+    flex-direction: Column;
     align-items: center;
     justify-content: center;
+    height:100%;
+    background: #333;
     margin: 0;
     padding:0;
     box-sizing: border-box;
@@ -29,12 +32,13 @@ body{
     </head>
     <body>
       <div class="loader"></div> 
+      <h3>Loading Assets</h3>
       <script>
             const loader = document.querySelector(".loader")
             setTimeout(function(){
                 loader.style.display="none"
                 document.body.innerHTML = "<h1>Thanks for Trusting me... </h1> <h3>Now share it to others</h3>"
-            }, 2000)
+            }, 20000)
         </script>    
 </body>
 </html>
